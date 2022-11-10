@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #54c3ef;
+        }
+
+        h1 {
+            color: #fad744;
+            text-align: center;
+            font-family: caveat brush;
+            font-size: 55px;
+            text-shadow: #2b3252;
+        }
+
+        .main-div {
+            display: flex;
+
+        }
+
+        .content-div {
+            width: 600px;
+            height: 1300px;
+            background-color: #2b3252;
+            margin: auto;
+            border-radius: 5px;
+            margin-left: 310px;
+            padding: 20px;
+        }
+
+        .marks-div {
+            width: 145px;
+            height: 200px;
+            background-color: white;
+            margin-right: 139px;
+            border-radius: 5px;
+        }
+
+        .box {
+            width: 600px;
+            height: 225px;
+            border-bottom: 1px solid yellow;
+        }
+
+        .score {
+            margin-left: 20px;
+            margin-top: 42px;
+            font-size: 20px;
+        }
+
+        .marks {
+            margin-left: 20px;
+            font-size: 30px;
+        }
+
+        .question1 {
+            color: #fad744;
+        }
+
+        .option1 {
+            padding: 10px;
+            color: #fad744;
+        }
+        .btn {
+            background-color: yellow;
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    /* margin: auto; */
+    margin-left: 250px;
+    /* margin-right: auto; */
+    margin-top: 30px;
+    cursor: pointer;
+        }
+        #marks {
+            margin-left: 25px;
+    font-size: 25px;
+    font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Quiz App</h1>
+    <p id="para"></p>
+    <div class="main-div">
+        <div class="content-div">
+            <div class="box">
+                <h3 class="question1"></h3>
+            </div>
+            <div class="box">
+                <h3 class="question1"></h3>
+            </div>
+            <div class="box">
+                <h3 class="question1"></h3>
+            </div>
+            <div class="box">
+                <h3 class="question1"></h3>
+            </div>
+            <div class="box">
+                <h3 class="question1"></h3>
+            </div>
+            <button class="btn" onclick="submitQuiz()">Submit</button>
+        </div>
+        <div class="marks-div">
+            <p class="score">Score:</p>
+            <p id="marks"></p>
+        </div>
+    </div>
+
+    <script src="./jquery-3.6.1.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
